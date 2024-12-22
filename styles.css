@@ -1,9 +1,8 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url(img/bg.jpeg);
+    background: url(img/Background.jpeg);
     background-size: cover;
     color: #333;
     display: flex;
@@ -79,15 +78,52 @@ button:hover {
     margin-bottom: 15px;
 }
 
-#users {
-    list-style-type: none;
-    padding: 0;
+#userTable {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
 }
 
-#users li {
-    background: #fff;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+#userTable thead tr {
+    background-color: #ffffff;
+}
+
+#userTable th,
+#userTable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Таблиця стилі */
+#userTable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+#userTable th, #userTable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#userTable tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#userTable tr:nth-child(even) {
+    background-color: #f0f8ff; 
+}
+
+#userTable th {
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+#userTable tbody tr:hover {
+    background-color: #e9e9e9;
 }
